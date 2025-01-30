@@ -1,0 +1,15 @@
+🔍 Script started at 2025-01-30 19:58:46
+Starting training...
+Epoch 1: Train Loss=1.9540, Train Acc=0.6848 | Val Loss=0.9742, Val Acc=0.9126
+Epoch 2: Train Loss=0.5011, Train Acc=0.9381 | Val Loss=0.3664, Val Acc=0.9320
+Epoch 3: Train Loss=0.2021, Train Acc=0.9621 | Val Loss=0.3228, Val Acc=0.9126
+Epoch 4: Train Loss=0.1138, Train Acc=0.9834 | Val Loss=0.2357, Val Acc=0.9320
+Epoch 5: Train Loss=0.0741, Train Acc=0.9917 | Val Loss=0.2997, Val Acc=0.8738
+Epoch 6: Train Loss=0.0561, Train Acc=0.9898 | Val Loss=0.2584, Val Acc=0.9126
+Epoch 7: Train Loss=0.0417, Train Acc=0.9935 | Val Loss=0.1963, Val Acc=0.9417
+Epoch 8: Train Loss=0.0258, Train Acc=0.9991 | Val Loss=0.1842, Val Acc=0.9320
+Epoch 9: Train Loss=0.0178, Train Acc=0.9991 | Val Loss=0.2245, Val Acc=0.9320
+Epoch 10: Train Loss=0.0115, Train Acc=1.0000 | Val Loss=0.2698, Val Acc=0.9417
+Best model saved at saved_models/best_vit_model.pth
+Generating predictions on test set...
+Submission file saved as `submission.csv`

@@ -1,0 +1,10 @@
+Some weights of ViTForImageClassification were not initialized from the model checkpoint at google/vit-large-patch16-224-in21k and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/gpfs/users/yutaoc/ai_task/src/training/train.py:35: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler()
+/gpfs/users/yutaoc/ai_task/src/utils/utils.py:19: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+Traceback (most recent call last):
+  File "/gpfs/users/yutaoc/ai_task/main.py", line 11, in <module>
+    from src.inference.predict import generate_submission
+ImportError: cannot import name 'generate_submission' from 'src.inference.predict' (/gpfs/users/yutaoc/ai_task/src/inference/predict.py)

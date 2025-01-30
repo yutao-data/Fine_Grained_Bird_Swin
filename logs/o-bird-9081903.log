@@ -1,0 +1,17 @@
+Script started at 2025-01-30 20:16:02
+Starting training...
+Epoch 1: Train Loss=1.9404, Train Acc=0.6470 | Val Loss=0.9425, Val Acc=0.9029
+Epoch 2: Train Loss=0.5047, Train Acc=0.9335 | Val Loss=0.3908, Val Acc=0.9417
+Best model saved at saved_models/best_vit_model.pth
+Generating predictions on test set...
+Submission file saved as `submission.csv`
+Test directory: datasets/test_images/mistery_cat
+Total test images found: 400
+🖼 Processing batch 1, batch size: 64
+🖼 Processing batch 2, batch size: 64
+🖼 Processing batch 3, batch size: 64
+🖼 Processing batch 4, batch size: 64
+🖼 Processing batch 5, batch size: 64
+🖼 Processing batch 6, batch size: 64
+🖼 Processing batch 7, batch size: 16
+Total predictions made: 800

@@ -1,0 +1,27 @@
+Epoch 1: Train Loss=1.9638, Train Acc=0.6488 | Val Loss=0.9491, Val Acc=0.8738
+Epoch 2: Train Loss=0.5038, Train Acc=0.9399 | Val Loss=0.3665, Val Acc=0.9029
+Epoch 3: Train Loss=0.2115, Train Acc=0.9538 | Val Loss=0.2529, Val Acc=0.9320
+Epoch 4: Train Loss=0.1263, Train Acc=0.9741 | Val Loss=0.2301, Val Acc=0.9223
+Epoch 5: Train Loss=0.0933, Train Acc=0.9797 | Val Loss=0.1434, Val Acc=0.9417
+Epoch 6: Train Loss=0.0493, Train Acc=0.9926 | Val Loss=0.1616, Val Acc=0.9320
+Epoch 7: Train Loss=0.0454, Train Acc=0.9926 | Val Loss=0.1701, Val Acc=0.9515
+Epoch 8: Train Loss=0.0285, Train Acc=0.9963 | Val Loss=0.1506, Val Acc=0.9515
+Epoch 9: Train Loss=0.0225, Train Acc=0.9991 | Val Loss=0.1922, Val Acc=0.9320
+Epoch 10: Train Loss=0.0164, Train Acc=0.9982 | Val Loss=0.1324, Val Acc=0.9612
+Best model saved at saved_models/best_vit_model.pth
+🚀 Starting training...
+Epoch 1: Train Loss=1.9064, Train Acc=0.7061 | Val Loss=0.8746, Val Acc=0.8835
+Epoch 2: Train Loss=0.4842, Train Acc=0.9335 | Val Loss=0.3676, Val Acc=0.9223
+Epoch 3: Train Loss=0.1984, Train Acc=0.9547 | Val Loss=0.2839, Val Acc=0.9126
+Epoch 4: Train Loss=0.1131, Train Acc=0.9778 | Val Loss=0.2784, Val Acc=0.9223
+Epoch 5: Train Loss=0.0801, Train Acc=0.9880 | Val Loss=0.2329, Val Acc=0.9126
+Epoch 6: Train Loss=0.0498, Train Acc=0.9917 | Val Loss=0.2023, Val Acc=0.9320
+Epoch 7: Train Loss=0.0285, Train Acc=0.9991 | Val Loss=0.2187, Val Acc=0.9126
+Epoch 8: Train Loss=0.0206, Train Acc=0.9991 | Val Loss=0.2021, Val Acc=0.9126
+Epoch 9: Train Loss=0.0152, Train Acc=0.9991 | Val Loss=0.2339, Val Acc=0.9223
+Epoch 10: Train Loss=0.0105, Train Acc=1.0000 | Val Loss=0.2256, Val Acc=0.9223
+✅ Best model saved at saved_models/best_vit_model.pth
+📄 Training log saved to logs/training_log_20250130_194437.csv
+📊 Running evaluation on validation set...
+📊 Final Validation Accuracy: 0.9223
+📝 Generating predictions...

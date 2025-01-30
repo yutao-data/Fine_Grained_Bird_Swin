@@ -1,0 +1,10 @@
+🔍 Script started at 2025-01-30 20:08:17
+Starting training...
+Epoch 1: Train Loss=1.8682, Train Acc=0.6932 | Val Loss=0.8960, Val Acc=0.8835
+Epoch 2: Train Loss=0.4853, Train Acc=0.9261 | Val Loss=0.3840, Val Acc=0.9029
+Best model saved at saved_models/best_vit_model.pth
+Generating predictions on test set...
+Submission file saved as `submission.csv`
+Test directory: datasets/test_images
+Total test images found: 0
+No images found in the test directory. Please check the dataset path.
