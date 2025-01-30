@@ -1,0 +1,12 @@
+Script started at 2025-01-30 21:57:20
+🚀 Starting training (With Torchvision Augmentations)...
+Epoch 1: Train Loss=2.4773, Train Acc=0.4362 | Val Loss=1.8366, Val Acc=0.7379
+Epoch 2: Train Loss=1.5583, Train Acc=0.7606 | Val Loss=1.1146, Val Acc=0.8447
+Epoch 3: Train Loss=1.0652, Train Acc=0.8105 | Val Loss=0.7813, Val Acc=0.8835
+Epoch 4: Train Loss=0.8428, Train Acc=0.8346 | Val Loss=0.6262, Val Acc=0.8835
+Epoch 5: Train Loss=0.6912, Train Acc=0.8623 | Val Loss=0.5350, Val Acc=0.9029
+Epoch 6: Train Loss=0.6507, Train Acc=0.8521 | Val Loss=0.4855, Val Acc=0.8932
+Epoch 7: Train Loss=0.5955, Train Acc=0.8604 | Val Loss=0.4432, Val Acc=0.8932
+Epoch 8: Train Loss=0.5260, Train Acc=0.8706 | Val Loss=0.4174, Val Acc=0.8932
+Epoch 9: Train Loss=0.5083, Train Acc=0.8669 | Val Loss=0.3949, Val Acc=0.8932
+Epoch 10: Train Loss=0.4752, Train Acc=0.8808 | Val Loss=0.3848, Val Acc=0.8932

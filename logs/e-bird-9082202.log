@@ -1,0 +1,49 @@
+Some weights of ViTForImageClassification were not initialized from the model checkpoint at google/vit-large-patch16-224-in21k and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Traceback (most recent call last):
+  File "/gpfs/users/yutaoc/ml_task/main.py", line 29, in <module>
+    main()
+  File "/gpfs/users/yutaoc/ml_task/main.py", line 22, in main
+    model = train_and_evaluate()
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/users/yutaoc/ml_task/src/training/train.py", line 46, in train_and_evaluate
+    train_loss, train_acc = train_epoch(model, train_loader, optimizer, scaler, device)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/users/yutaoc/ml_task/src/utils/utils.py", line 15, in train_epoch
+    for images, labels in loader:
+                          ^^^^^^
+  File "/gpfs/users/yutaoc/miniconda3/envs/bird/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/gpfs/users/yutaoc/miniconda3/envs/bird/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1344, in _next_data
+    return self._process_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/users/yutaoc/miniconda3/envs/bird/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1370, in _process_data
+    data.reraise()
+  File "/gpfs/users/yutaoc/miniconda3/envs/bird/lib/python3.12/site-packages/torch/_utils.py", line 706, in reraise
+    raise exception
+AttributeError: Caught AttributeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/gpfs/users/yutaoc/miniconda3/envs/bird/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 309, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/users/yutaoc/miniconda3/envs/bird/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/gpfs/users/yutaoc/ml_task/src/data/dataset_loader.py", line 19, in __getitem__
+    image = self.transform(image)  # No `image=` argument
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/users/yutaoc/miniconda3/envs/bird/lib/python3.12/site-packages/torchvision/transforms/transforms.py", line 95, in __call__
+    img = t(img)
+          ^^^^^^
+  File "/gpfs/users/yutaoc/miniconda3/envs/bird/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/users/yutaoc/miniconda3/envs/bird/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/users/yutaoc/miniconda3/envs/bird/lib/python3.12/site-packages/torchvision/transforms/transforms.py", line 1731, in forward
+    if value is not None and not (len(value) in (1, img.shape[-3])):
+                                                    ^^^^^^^^^
+AttributeError: 'Image' object has no attribute 'shape'. Did you mean: 'save'?
+

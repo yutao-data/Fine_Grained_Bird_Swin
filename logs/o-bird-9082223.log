@@ -1,0 +1,9 @@
+Script started at 2025-01-30 23:26:12
+Starting training (With Torchvision Augmentations)...
+Epoch 1: Train Loss=2.4638, Train Acc=0.4538 | Val Loss=1.8341, Val Acc=0.8155
+Epoch 2: Train Loss=1.5179, Train Acc=0.8004 | Val Loss=1.1017, Val Acc=0.8738
+Epoch 3: Train Loss=1.0531, Train Acc=0.8179 | Val Loss=0.7660, Val Acc=0.9029
+Epoch 4: Train Loss=0.8257, Train Acc=0.8503 | Val Loss=0.6127, Val Acc=0.9223
+Epoch 5: Train Loss=0.6748, Train Acc=0.8669 | Val Loss=0.5229, Val Acc=0.9029
+Best model saved at saved_models/best_vit_model.pth
+Generating predictions on test set...

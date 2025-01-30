@@ -1,0 +1,23 @@
+Some weights of ViTForImageClassification were not initialized from the model checkpoint at google/vit-large-patch16-224-in21k and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/gpfs/users/yutaoc/miniconda3/envs/bird/lib/python3.12/site-packages/torch/cuda/__init__.py:654: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Traceback (most recent call last):
+  File "/gpfs/users/yutaoc/ml_task/main.py", line 29, in <module>
+    main()
+  File "/gpfs/users/yutaoc/ml_task/main.py", line 22, in main
+    model = train_and_evaluate()
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/users/yutaoc/ml_task/src/training/train.py", line 46, in train_and_evaluate
+    train_loss, train_acc = train_epoch(model, train_loader, optimizer, scaler, device)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/users/yutaoc/ml_task/src/utils/utils.py", line 16, in train_epoch
+    images, labels = images.to(device), labels.to(device)
+                     ^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: unknown error
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+slurmstepd: error: *** JOB 9082194 ON ruche-gpu16 CANCELLED AT 2025-01-30T22:58:39 ***
+slurmstepd: error: proctrack_p_wait: Unable to destroy container 872 in cgroup plugin, giving up after 128 sec

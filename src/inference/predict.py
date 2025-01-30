@@ -7,6 +7,7 @@ from torch.utils.data import DataLoader, Dataset
 from src.configs.config import Config
 from src.models.vit_model import load_vit_model
 
+
 class CompetitionTestDataset(Dataset):
     def __init__(self, test_dir, transform=None):
         self.test_dir = test_dir
@@ -21,6 +22,7 @@ class CompetitionTestDataset(Dataset):
         if self.transform:
             image = self.transform(image)
         return image, os.path.basename(self.image_paths[idx])
+
 
 def generate_submission(test_dir, model_path, output_csv="submission.csv"):
     config = Config()
@@ -46,6 +48,9 @@ def generate_submission(test_dir, model_path, output_csv="submission.csv"):
     filenames = []
     predictions = []
 
+    # Map class names to integer indices
+    class_to_idx = {class_name: idx for idx, class_name in enumerate(config.class_order)}
+
     # Run Inference
     with torch.no_grad():
         for images, paths in test_loader:
@@ -56,7 +61,8 @@ def generate_submission(test_dir, model_path, output_csv="submission.csv"):
             filenames.extend(paths)
             predictions.extend(batch_preds.tolist())
 
-    # Save Predictions to CSV
+    # Convert class indices to correct integer values for submission format
     submission_df = pd.DataFrame({"path": filenames, "class_idx": predictions})
     submission_df.to_csv(output_csv, index=False)
-    print(f"Submission file saved as `{output_csv}`")
+    
+    print(f"Submission file saved as `{output_csv}` with correct integer class indices.")

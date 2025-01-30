@@ -1,0 +1,6 @@
+Script started at 2025-01-30 23:55:50
+Starting training (With Torchvision Augmentations)...
+Epoch 1: Train Loss=2.5172, Train Acc=0.4288 | Val Loss=1.9006, Val Acc=0.7961
+Best model saved at saved_models/best_vit_model.pth
+Generating predictions on test set...
+Submission file saved as `submission.csv` (With Correct Class Mapping)

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/gpfs/users/yutaoc/ml_task/main.py", line 29, in <module>
+    main()
+  File "/gpfs/users/yutaoc/ml_task/main.py", line 22, in main
+    model = train_and_evaluate()
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/users/yutaoc/ml_task/src/training/train.py", line 20, in train_and_evaluate
+    train_dataset = BirdDataset(config.train_dir, transform=get_train_augmentations(), use_albumentations=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BirdDataset.__init__() got an unexpected keyword argument 'use_albumentations'

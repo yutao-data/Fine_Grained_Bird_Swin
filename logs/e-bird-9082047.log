@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/gpfs/users/yutaoc/ml_task/main.py", line 6, in <module>
+    from src.data.dataset_loader import BirdDataset
+  File "/gpfs/users/yutaoc/ml_task/src/data/dataset_loader.py", line 4, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'

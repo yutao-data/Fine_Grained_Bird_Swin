@@ -1,0 +1,17 @@
+Some weights of ViTForImageClassification were not initialized from the model checkpoint at google/vit-large-patch16-224-in21k and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/gpfs/users/yutaoc/miniconda3/envs/bird/lib/python3.12/site-packages/torch/amp/autocast_mode.py:265: UserWarning: User provided device_type of 'cuda', but CUDA is not available. Disabling
+  warnings.warn(
+Some weights of ViTForImageClassification were not initialized from the model checkpoint at google/vit-large-patch16-224-in21k and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/gpfs/users/yutaoc/ml_task/src/inference/predict.py:42: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model.load_state_dict(torch.load(model_path, map_location=device))
+Traceback (most recent call last):
+  File "/gpfs/users/yutaoc/ml_task/main.py", line 29, in <module>
+    main()
+  File "/gpfs/users/yutaoc/ml_task/main.py", line 26, in main
+    generate_submission(config.test_dir, config.best_model_path, output_csv="submission.csv")
+  File "/gpfs/users/yutaoc/ml_task/src/inference/predict.py", line 60, in generate_submission
+    mapped_predictions = [config.class_order[idx] for idx in predictions]
+                          ^^^^^^^^^^^^^^^^^^
+AttributeError: 'Config' object has no attribute 'class_order'
