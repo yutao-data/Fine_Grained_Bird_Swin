@@ -73,28 +73,6 @@ The proposed approach achieved high classification accuracy:
 | MPSA                         | 95.23%             | 87.50%       |
 | Two-Stage (Swin + MPSA)      | -                   | 87.00%       |
 
-## Installation
-To install dependencies, run:
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
-### Train the Model
-```bash
-python main.py --train
-```
-
-### Test the Model
-```bash
-python main.py --test
-```
-
-### Evaluate Performance
-```bash
-python evaluate.py
-```
-
 ## Future Work
 - Incorporate **self-supervised learning** (DINOv2) to improve feature extraction.
 - Explore **semi-supervised** techniques to leverage unlabeled data.
